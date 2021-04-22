@@ -1,0 +1,136 @@
+  @media (min-width: 600px) and (max-width: 950px) {
+    .menu {
+      &__item--more {
+        display: block;
+      }
+  
+      &__item:nth-child(5),
+      &__item:nth-child(6) {
+        display: none;
+      }
+    }    
+  }
+
+  @media (min-width: 600px) and (max-width: 850px) {
+    .menu__item:nth-child(4) {
+      display: none;
+    }
+  } 
+
+  @media (min-width: 600px) and (max-width: 650px) {
+    .menu__item:nth-child(3) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 600px) {
+    body {
+      padding-top: 54px;
+    }
+    
+    .header {
+        height: 54px;
+    }
+
+    .logo {
+        height: 45px;
+        width: auto;
+        margin-left: 20px;
+      }
+
+    .menu__item:nth-child(1),
+    .menu__item--more {
+      display: none;
+    }
+
+    .container {
+      padding: 0;
+    }
+
+    .menu__surface-block,
+    .user__menu {
+      display: none;
+    }
+
+    .header__btn-menu,
+    .header__bottom {
+      display: flex;
+    }
+
+    .header__bottom {
+      align-items: center;
+      border-bottom: 1px solid #e6e6e6;
+      padding: 0;
+    }
+
+    .header__bottom .menu__link__label {
+      font-weight: bold;
+    }
+
+    .user {
+      display: flex;
+      height: 100%;
+    }
+
+    .child-active {
+      flex-grow: 1;
+    }
+
+    .user-block {
+      width: 100%;
+      padding-right: 20px;
+    }
+
+    .menu__link--logo {
+      display: block;
+    }
+
+    .menu__link--with-icon:nth-child(3) {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .menu__link--with-icon:nth-child(4) {
+      margin-left: auto;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    .menu--open {
+      display: flex;
+      position: absolute;
+      top: 54px;
+      background: white;
+      flex-direction: column;
+      width: 100%;
+      z-index: 2;
+    }
+
+    .menu__item {
+      border-bottom: 1px solid #e6e6e6;
+      margin-left: 0;
+      padding: 0 15px;
+    }
+
+    .menu__link {
+      display: flex;
+    }
+
+    .menu__link__chevron {
+      margin-left: auto;
+    }
+
+    .menu__link:hover .menu__link__label {
+      border-color: transparent;
+    }
+  } 
+
+  @media (max-width: 460px) {
+    .about{
+      span{
+        font-size: 40px;
+      }
+    }
+  }
